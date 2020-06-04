@@ -6,7 +6,7 @@ from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 SAMPLE_SIZE=1000
 
-
+STATUS=['ST','非ST']
 """
 Creat radom
 """
@@ -115,7 +115,7 @@ def predict(modelpath):
             FN+=1
 
 
-        print("predict result :{}---label:{}".format(res[id],Y_test[id]))
+        print("预测结果 :{}---原始数据:{}".format(STATUS[res[id]],STATUS[Y_test[id]]))
 
 
     print("result:acc={} , recall={}".format((TP+TN)/TestSample,TP/(TP+FN)))

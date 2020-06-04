@@ -50,7 +50,7 @@ class ExcelReade(object):
 #Stkcd	净利润2017	净利润2018	净资产收益率	总资产净利润率	x1	x2	x3	x4	x5	x6	x7	x8	x9	x10	x11	x12	x13	x14
 
 def GetDatafromDict():
-    start = ExcelReade('./data/datasset.xlsx', 'Sheet1')
+    start = ExcelReade('./data/dataset.xlsx', 'Sheet1')
     data = start.data_dict()
 
     train=[]
